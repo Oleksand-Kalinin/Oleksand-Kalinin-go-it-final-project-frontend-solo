@@ -1,14 +1,27 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import AdvantagesSection from "../AdvantagesSection/AdvantagesSection.tsx";
+import useMediaQuery from "../../hooks/useMediaQuery.ts";
 
-function SharedLayout() {
+const SharedLayout = () => {
+  const location = useLocation();
+
+  // Логіка для перевірки ширини екрану
+  const isDesktop = useMediaQuery("(min-width: 1440px)");
+
+  // Маршрути, на яких не потрібно показувати AdvantagesSection
+  const hideAdvantagesOnRoutes = ["/signup", "/signin"];
+
+  // Логіка рендерингу AdvantagesSection
+  const shouldShowAdvantages =
+    isDesktop || !hideAdvantagesOnRoutes.includes(location.pathname);
+
   return (
-    <div>
+    <>
       <Outlet />
-      <AdvantagesSection />
-    </div>
+      {shouldShowAdvantages && <AdvantagesSection />}
+    </>
   );
-}
+};
 
 export default SharedLayout;
