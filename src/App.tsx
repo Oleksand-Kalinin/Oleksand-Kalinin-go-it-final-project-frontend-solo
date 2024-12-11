@@ -9,7 +9,7 @@ import SharedLayout from "./components/SharedLayout/SharedLayout.tsx";
 
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <main>
       <Routes>
@@ -23,6 +23,6 @@ function App() {
       </Routes>
     </main>
   );
-}
+};
 
 export default App;
