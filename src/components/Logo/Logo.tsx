@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import css from "./Logo.module.css";
 
-const Logo = () => {
+type logoProps = {
+  marginBottom?: string;
+};
+const Logo = ({ marginBottom }: logoProps) => {
+  const logoStyle = {
+    marginBottom: marginBottom || "6px",
+  };
   return (
-    <Link to="/" className={css.logo}>
+    <Link to="/" style={logoStyle} className={css.logo}>
       AquaTrack
     </Link>
   );

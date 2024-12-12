@@ -1,0 +1,59 @@
+.textHomePage {
+    line-height: 1.29;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+}
+
+.titleHomePage {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--main-color);
+    margin-bottom: 32px;
+}
+
+.nav {
+    display: flex;
+    column-gap: 10px;
+}
+
+.itemNav {
+    border-radius: 30px;
+
+    font-weight: 700;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--main-color);
+
+    transition:
+        background-color 250ms linear,
+        color 250ms linear,
+        border-color 250ms linear;
+}
+
+.itemNav:nth-child(1) {
+    background-color: var(--third-color);
+    min-width: 116px;
+    padding: 14px 19px;
+}
+
+.itemNav:nth-child(1):hover,
+.itemNav:nth-child(1):focus {
+    background-color: var(--fourth-color);
+}
+
+.itemNav:nth-child(2) {
+    background-color: transparent;
+    min-width: 104px;
+    padding: 14px 28px;
+    border: 1px solid var(--main-color);
+}
+
+.itemNav:nth-child(2):hover,
+.itemNav:nth-child(2):focus {
+    color: var(--fourth-color);
+    border-color: var(--fourth-color);
+}
