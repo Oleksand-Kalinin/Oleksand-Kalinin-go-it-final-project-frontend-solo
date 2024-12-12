@@ -4,8 +4,8 @@ import WelcomeSection from "../../components/WelcomeSection/WelcomeSection.tsx";
 
 const HomePage = () => {
   return (
-    <Section>
-      <Container>
+    <Section paddingBottom="8px">
+      <Container bgColor="#f0eff4" padding="24px 16px 67px">
         <WelcomeSection />
       </Container>
     </Section>

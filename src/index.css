@@ -1,8 +1,19 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
 :root {
   --main-color: #323f47;
+  --secondary-color: #2f2f2f;
+  --third-color: #9be1a0;
+  --fourth-color: #87d28d;
+
 }
 
-@import 'modern-normalize/modern-normalize.css';
+
+*,
+*::before,
+*::after {
+  /* border: 1px solid black; */
+}
 
 body {
   font-family: "Poppins", sans-serif;
