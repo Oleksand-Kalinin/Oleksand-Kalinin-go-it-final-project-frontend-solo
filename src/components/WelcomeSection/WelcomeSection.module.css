@@ -1,3 +1,7 @@
+.wrapper {
+    max-width: 311px;
+}
+
 .textHomePage {
     line-height: 1.29;
     letter-spacing: 0.06em;
@@ -56,4 +60,38 @@
 .itemNav:nth-child(2):focus {
     color: var(--fourth-color);
     border-color: var(--fourth-color);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .wrapper {
+        max-width: 547px;
+        padding-left: 32px;
+    }
+
+    .textHomePage {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .titleHomePage {
+        font-size: 64px;
+        line-height: 1.09;
+        margin-bottom: 32px;
+    }
+
+    .itemNav {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .itemNav:nth-child(1) {
+        min-width: 169px;
+        padding: 18px 40px;
+    }
+
+    .itemNav:nth-child(2) {
+        min-width: 135px;
+        padding: 18px 40px;
+    }
 }
