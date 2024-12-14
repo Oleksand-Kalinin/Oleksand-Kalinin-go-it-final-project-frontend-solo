@@ -1,21 +1,13 @@
+import clsx from "clsx";
 import css from "./Container.module.css";
 
 type containerProps = {
   children: React.ReactNode;
-  padding?: string;
-  bgColor?: string;
+  className?: string;
 };
 
-const Container = ({ children, padding, bgColor }: containerProps) => {
-  const containerStyle = {
-    padding: padding || "16px",
-    backgroundColor: bgColor || "transparent",
-  };
-  return (
-    <div style={containerStyle} className={css.container}>
-      {children}
-    </div>
-  );
+const Container = ({ children, className }: containerProps) => {
+  return <div className={clsx(css.container, className)}>{children}</div>;
 };
 
 export default Container;

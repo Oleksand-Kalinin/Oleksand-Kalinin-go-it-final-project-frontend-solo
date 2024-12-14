@@ -1,16 +1,13 @@
+import clsx from "clsx";
+import css from "./Section.module.css";
+
 type sectionProps = {
   children: React.ReactNode;
-  paddingTop?: string;
-  paddingBottom?: string;
+  className?: string;
 };
 
-const Section = ({ children, paddingTop, paddingBottom }: sectionProps) => {
-  const sectionStyle = {
-    paddingTop: paddingTop || "16px",
-    paddingBottom: paddingBottom || "16px",
-  };
-
-  return <section style={sectionStyle}>{children}</section>;
+const Section = ({ children, className }: sectionProps) => {
+  return <section className={clsx(css.section, className)}>{children}</section>;
 };
 
 export default Section;
