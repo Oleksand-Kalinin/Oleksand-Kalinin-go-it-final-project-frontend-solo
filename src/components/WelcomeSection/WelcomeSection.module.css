@@ -1,3 +1,12 @@
+.section.welcomeSection {
+    padding-bottom: 8px;
+}
+
+.container {
+    background-color: #f0eff4;
+    padding: 24px 16px 67px;
+}
+
 .wrapper {
     max-width: 311px;
 }
@@ -64,6 +73,14 @@
 
 @media only screen and (min-width: 768px) {
 
+    .section.welcomeSection {
+        padding-top: 32px;
+    }
+
+    .container {
+        padding: 32px 32px 50px;
+    }
+
     .wrapper {
         max-width: 547px;
         padding-left: 32px;
@@ -94,4 +111,12 @@
         min-width: 135px;
         padding: 18px 40px;
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        padding: 32px 32px 188px;
+    }
+
 }
