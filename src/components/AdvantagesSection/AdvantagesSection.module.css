@@ -10,7 +10,7 @@
     border-radius: 30px;
 
     background-image:
-        url('../../images/advantages-section/advantages-section-background-img-mobile.png');
+        url('../../images/advantages-section/bg-img-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,20 +19,53 @@
 
     .container {
         background-image:
-            url('../../images/advantages-section/advantages-section-background-img-mobile@2x.png');
+            url('../../images/advantages-section/bg-img-mobile@2x.png');
     }
 
 }
 
 .wrapperOurUsers {
+    max-width: 160px;
+
     position: absolute;
     z-index: 2;
     top: 209px;
     left: 16px;
 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+
     background-color: var(--fifth-color);
     padding: 10px 14px;
     border-radius: 30px;
+}
+
+.wrapperUserPhoto {
+    position: relative;
+    display: flex;
+}
+
+.firstUserPhoto,
+.secondUserPhoto,
+.thirdUserPhoto {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.firstUserPhoto {
+    z-index: 5;
+    transform: translateX(0);
+}
+
+.secondUserPhoto {
+    z-index: 4;
+    transform: translateX(-36%);
+}
+
+.thirdUserPhoto {
+    z-index: 3;
+    transform: translateX(-72%);
 }
 
 .textOurUsers {
