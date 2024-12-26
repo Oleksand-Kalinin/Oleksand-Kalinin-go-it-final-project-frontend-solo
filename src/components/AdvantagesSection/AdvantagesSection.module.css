@@ -171,10 +171,26 @@
     }
 }
 
-@media only screen and (min-resolution: 192dpi) and (min-width: 767px) {
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+
+
     .container {
         background-image:
-            url('../../images/advantages-section/bgr-img-tablet@2x.png');
+            url('../../images/advantages-section/bg-img-tablet@2x.png');
     }
 
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .section.advantagesSection {
+        padding-top: 32px;
+    }
+
+    .container.advantagesContainer {
+        width: 632px;
+        min-height: 736px;
+        background-image:
+            url('../../images/advantages-section/bg-img-desktop.png');
+    }
 }
