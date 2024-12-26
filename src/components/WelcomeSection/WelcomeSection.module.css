@@ -8,6 +8,10 @@
     padding-bottom: 67px;
 }
 
+.logo {
+    margin-bottom: 74px;
+}
+
 .textHomePage {
     line-height: 1.29;
     letter-spacing: 0.06em;
@@ -78,6 +82,10 @@
         padding: 32px 32px 50px;
     }
 
+    .logo {
+        margin-bottom: 50px;
+    }
+
     .wrapper {
         padding-left: 32px;
     }
@@ -118,6 +126,10 @@
     .container.welcomeContainer {
         width: 672px;
         padding: 32px 61px 188px 32px;
+    }
+
+    .logo {
+        margin-bottom: 132px;
     }
 
     .titleHomePage {

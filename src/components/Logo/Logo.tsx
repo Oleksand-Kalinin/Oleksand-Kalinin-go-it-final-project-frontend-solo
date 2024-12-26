@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 import css from "./Logo.module.css";
+import clsx from "clsx";
 
 type logoProps = {
-  marginBottom?: string;
+  className?: string;
 };
-const Logo = ({ marginBottom }: logoProps) => {
-  const logoStyle = {
-    marginBottom: marginBottom || "6px",
-  };
+const Logo = ({ className }: logoProps) => {
   return (
-    <Link to="/" style={logoStyle} className={css.logo}>
+    <Link to="/" className={clsx(css.logo, className)}>
       AquaTrack
     </Link>
   );
