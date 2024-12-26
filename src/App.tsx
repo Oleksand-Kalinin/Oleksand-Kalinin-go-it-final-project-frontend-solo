@@ -7,11 +7,11 @@ import TrackerPage from "./pages/TrackerPage/TrackerPage.tsx";
 
 import SharedLayout from "./components/SharedLayout/SharedLayout.tsx";
 
-import "./App.css";
+import css from "./App.module.css";
 
 const App = () => {
   return (
-    <main>
+    <main className={css.wrapper}>
       <Routes>
         <Route element={<SharedLayout />}>
           <Route path="/" element={<HomePage />} />

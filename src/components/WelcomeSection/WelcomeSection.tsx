@@ -20,7 +20,7 @@ const WelcomeSection = () => {
 
   return (
     <Section className={clsx(css.section, css.welcomeSection)}>
-      <Container className={css.container}>
+      <Container className={clsx(css.container, css.welcomeContainer)}>
         <Logo marginBottom={marginBottom} />
         <div className={css.wrapper}>
           <p className={css.textHomePage}>

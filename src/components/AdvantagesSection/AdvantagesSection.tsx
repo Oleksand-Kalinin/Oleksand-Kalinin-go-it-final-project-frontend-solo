@@ -22,7 +22,7 @@ import css from "./AdvantagesSection.module.css";
 const AdvantagesSection = () => {
   return (
     <Section className={clsx(css.section, css.advantagesSection)}>
-      <Container className={css.container}>
+      <Container className={clsx(css.container, css.advantagesContainer)}>
         <div className={css.wrapperOurUsers}>
           <div className={css.wrapperUserPhoto}>
             <picture className={css.firstUserPhoto}>
