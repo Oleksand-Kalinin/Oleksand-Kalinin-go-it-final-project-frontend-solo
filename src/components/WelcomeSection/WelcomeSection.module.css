@@ -8,10 +8,6 @@
     padding-bottom: 67px;
 }
 
-.wrapper {
-    max-width: 311px;
-}
-
 .textHomePage {
     line-height: 1.29;
     letter-spacing: 0.06em;
@@ -83,7 +79,6 @@
     }
 
     .wrapper {
-        max-width: 547px;
         padding-left: 32px;
     }
 
@@ -116,7 +111,12 @@
 
 @media screen and (min-width: 1440px) {
 
+    .section.welcomeSection {
+        padding-bottom: 32px;
+    }
+
     .container.welcomeContainer {
+        width: 672px;
         padding: 32px 61px 188px 32px;
     }
 
