@@ -4,7 +4,7 @@
 
 
 .container.welcomeContainer {
-    background-color: #f0eff4;
+    background-color: var(--sixth-color);
     padding-bottom: 67px;
 }
 
