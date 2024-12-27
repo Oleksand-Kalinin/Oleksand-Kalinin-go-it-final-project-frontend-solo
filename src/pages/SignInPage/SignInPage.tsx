@@ -1,5 +1,7 @@
+import SignInSection from "../../components/SignInSection/SignInSection.tsx";
+
 const SignInPage = () => {
-  return <div>SingIn Page</div>;
+  return <SignInSection />;
 };
 
 export default SignInPage;

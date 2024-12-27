@@ -1,0 +1,14 @@
+.container {
+    background-color: var(--sixth-color);
+    position: relative;
+    padding: 60px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+}
