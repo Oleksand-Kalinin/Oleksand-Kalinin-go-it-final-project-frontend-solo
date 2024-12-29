@@ -1,3 +1,9 @@
+@media screen and (max-width: 1439px) {
+    .section {
+        height: 100vh;
+    }
+}
+
 .container {
     background-color: var(--sixth-color);
     position: relative;

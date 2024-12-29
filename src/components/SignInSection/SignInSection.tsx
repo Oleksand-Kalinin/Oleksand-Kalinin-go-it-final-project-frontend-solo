@@ -6,7 +6,7 @@ import css from "./SignInSection.module.css";
 
 const SignInSection = () => {
   return (
-    <Section>
+    <Section className={css.section}>
       <Container className={css.container}>
         <Logo className={css.logo} />
         <SignInForm />
