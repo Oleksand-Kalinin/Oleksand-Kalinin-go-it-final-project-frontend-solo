@@ -36,6 +36,29 @@
     position: relative;
 }
 
+.buttonEye {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyeIcon {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: var(--secondary-color);
+}
+
 .input {
     width: 100%;
     border: 1px solid rgba(47, 47, 47, 0.2);
