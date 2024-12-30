@@ -18,3 +18,14 @@
         height: 100svh;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .section {
+        padding: 32px 0;
+    }
+
+    .container {
+        width: 672px;
+        height: 736px;
+    }
+}
