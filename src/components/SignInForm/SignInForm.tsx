@@ -1,30 +1,17 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useId, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import * as yup from "yup";
 import css from "./SignInForm.module.css";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
 import sprite from "../../images/sprite.svg";
+import { SignInValidationSchema } from "../../js/validationSchemas.ts";
 
 type Inputs = {
   email: string;
   password: string;
 };
-
-const SignInValidationSchema = yup
-  .object({
-    email: yup
-      .string()
-      .email("Incorrect email address")
-      .required("Email is required"),
-    password: yup
-      .string()
-      .min(8, "The password must be at least 8 characters long")
-      .required("Password is required"),
-  })
-  .required();
 
 const SignInForm = () => {
   const emailId = useId();
