@@ -1,36 +1,18 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useId, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import * as yup from "yup";
 import css from "./SignUpForm.module.css";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
 import sprite from "../../images/sprite.svg";
+import { SignUpValidationSchema } from "../../js/validationSchemas.ts";
 
 type Inputs = {
   email: string;
   password: string;
   passwordRepeat: string;
 };
-
-const SignUpValidationSchema = yup
-  .object({
-    email: yup
-      .string()
-      .email("Incorrect email address")
-      .required("Email is required"),
-    password: yup
-      .string()
-      .min(8, "The password must be at least 8 characters long")
-      .required("Password is required"),
-    passwordRepeat: yup
-      .string()
-      .min(8, "The password must be at least 8 characters long")
-      .oneOf([yup.ref("password")], "Passwords must match")
-      .required("Password is required"),
-  })
-  .required();
 
 const SignInForm = () => {
   const emailId = useId();
@@ -121,7 +103,7 @@ const SignInForm = () => {
             className={css.input}
             id={passwordRepeatId}
             type={isVisiblePasswordRepeat ? "text" : "password"}
-            placeholder="Enter your password"
+            placeholder="Repeat password"
             {...register("passwordRepeat")}
           />
           <button
