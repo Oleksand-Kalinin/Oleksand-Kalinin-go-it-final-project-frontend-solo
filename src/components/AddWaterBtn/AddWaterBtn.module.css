@@ -1,3 +1,5 @@
+/* #region Common styles */
+
 .wrapperBtn {
     display: flex;
     justify-content: center;
@@ -5,6 +7,21 @@
     column-gap: 10px;
     border: none;
 }
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBtn {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+/* #endregion Common styles */
+
+/* #region WaterMainInfo styles */
 
 .wrapperBtnWaterMainInfo {
     border-radius: 30px;
@@ -22,18 +39,6 @@
     stroke: var(--fourth-color);
 }
 
-.wrapperBtnDailyInfo {
-    padding: 0;
-    min-width: 124px;
-    background-color: transparent;
-}
-
-.iconWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .iconWaterMainInfo {
     width: 16px;
     height: 16px;
@@ -42,6 +47,50 @@
 .iconWaterMainInfo .plusIcon {
     transform: scale(1.29);
     transform-origin: center;
+}
+
+.textBtnWaterMainInfo {
+    line-height: 1.29;
+    color: var(--fifth-color);
+
+    transition: color 250ms linear;
+}
+
+.wrapperBtnWaterMainInfo:hover .textBtnWaterMainInfo,
+.wrapperBtnWaterMainInfo:focus .textBtnWaterMainInfo {
+    color: var(--fourth-color);
+}
+
+@media screen and (min-width: 768px) {
+
+    .wrapperBtnWaterMainInfo {
+        padding: 18px 30px;
+        min-width: 178px;
+    }
+
+    .iconWaterMainInfo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .iconWaterMainInfo .plusIcon {
+        transform: scale(1.14);
+    }
+
+    .textBtnWaterMainInfo {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* #endregion WaterMainInfo styles */
+
+/* #region DailyInfo styles */
+
+.wrapperBtnDailyInfo {
+    padding: 0;
+    min-width: 124px;
+    background-color: transparent;
 }
 
 .iconDailyInfo {
@@ -66,25 +115,10 @@
     transform-origin: center;
 }
 
-.textBtn {
-    font-weight: 700;
-    letter-spacing: -0.01em;
-}
-
-.textBtnWaterMainInfo {
-    line-height: 1.29;
-    color: var(--fifth-color);
-
-    transition: color 250ms linear;
-}
-
-.wrapperBtnWaterMainInfo:hover .textBtnWaterMainInfo,
-.wrapperBtnWaterMainInfo:focus .textBtnWaterMainInfo {
-    color: var(--fourth-color);
-}
-
 .textBtnDailyInfo {
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-color);
 }
+
+/* #endregion DailyInfo styles */

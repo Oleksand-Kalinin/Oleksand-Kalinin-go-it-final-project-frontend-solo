@@ -4,7 +4,7 @@ import sprite from "../../images/sprite.svg";
 import css from "./AddWaterBtn.module.css";
 
 type AddWaterBtnProps = {
-  sectionName: string;
+  sectionName: "WaterMainInfo" | "DailyInfo";
   className?: string;
 };
 const AddWaterBtn = ({ sectionName, className }: AddWaterBtnProps) => {
