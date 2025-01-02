@@ -1,0 +1,21 @@
+.wrapper {
+    border-radius: 15px;
+    padding: 12px;
+    max-width: 102px;
+
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--fifth-color);
+}
+
+.dailyNorma {
+    font-weight: 700;
+    line-height: 1;
+    color: var(--main-color);
+    margin-bottom: 6px;
+}
+
+.text {
+    font-size: 10px;
+    line-height: 1;
+    color: rgba(47, 47, 47, 0.6);
+}

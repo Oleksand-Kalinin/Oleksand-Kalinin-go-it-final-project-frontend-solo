@@ -1,9 +1,10 @@
 import AddWaterBtn from "../AddWaterBtn/AddWaterBtn.tsx";
+import WaterDailyNorma from "../WaterDailyNorma/WaterDailyNorma.tsx";
 
 const WaterMainInfo = () => {
   return (
     <div>
-      <div>WaterDailyNorma</div>
+      <WaterDailyNorma />
       <div>WaterProgressBar</div>
       <AddWaterBtn sectionName="WaterMainInfo" />
     </div>
