@@ -24,11 +24,12 @@
     color: var(--secondary-color);
 }
 
-.wrapperLabelEmail {
+.wrapperLabelEmail,
+.wrapperLabelPassword {
     margin-bottom: 16px;
 }
 
-.wrapperLabelPassword {
+.wrapperLabelPasswordRepeat {
     margin-bottom: 32px;
 }
 
@@ -137,7 +138,8 @@
         line-height: 1.5;
     }
 
-    .wrapperLabelEmail {
+    .wrapperLabelEmail,
+    .wrapperLabelPassword {
         margin-bottom: 20px;
     }
 

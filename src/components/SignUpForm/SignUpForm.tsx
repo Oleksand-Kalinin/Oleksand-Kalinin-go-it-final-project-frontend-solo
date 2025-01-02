@@ -93,7 +93,7 @@ const SignInForm = () => {
         </div>
       </div>
 
-      <div className={clsx(css.wrapperLabel, css.wrapperLabelPassword)}>
+      <div className={clsx(css.wrapperLabel, css.wrapperLabelPasswordRepeat)}>
         <label className={css.label} htmlFor={passwordRepeatId}>
           Repeat password
         </label>
