@@ -1,0 +1,90 @@
+.wrapperBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+}
+
+.wrapperBtnWaterMainInfo {
+    border-radius: 30px;
+    padding: 14px 20px;
+    min-width: 140px;
+
+    stroke: var(--fifth-color);
+    background-color: var(--main-color);
+
+    transition: stroke 250ms linear;
+}
+
+.wrapperBtnWaterMainInfo:hover,
+.wrapperBtnWaterMainInfo:focus {
+    stroke: var(--fourth-color);
+}
+
+.wrapperBtnDailyInfo {
+    padding: 0;
+    min-width: 124px;
+    background-color: transparent;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconWaterMainInfo {
+    width: 16px;
+    height: 16px;
+}
+
+.iconWaterMainInfo .plusIcon {
+    transform: scale(1.29);
+    transform-origin: center;
+}
+
+.iconDailyInfo {
+    width: 30px;
+    height: 30px;
+    stroke: var(--main-color);
+
+    border-radius: 30px;
+    background-color: var(--third-color);
+
+    transition: stroke 250ms linear, background-color 250ms linear;
+}
+
+.wrapperBtnDailyInfo:hover .iconDailyInfo,
+.wrapperBtnDailyInfo:focus .iconDailyInfo {
+    stroke: var(--fifth-color);
+    background-color: var(--main-color);
+}
+
+.iconDailyInfo .plusIcon {
+    transform: scale(0.8);
+    transform-origin: center;
+}
+
+.textBtn {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.textBtnWaterMainInfo {
+    line-height: 1.29;
+    color: var(--fifth-color);
+
+    transition: color 250ms linear;
+}
+
+.wrapperBtnWaterMainInfo:hover .textBtnWaterMainInfo,
+.wrapperBtnWaterMainInfo:focus .textBtnWaterMainInfo {
+    color: var(--fourth-color);
+}
+
+.textBtnDailyInfo {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-color);
+}
