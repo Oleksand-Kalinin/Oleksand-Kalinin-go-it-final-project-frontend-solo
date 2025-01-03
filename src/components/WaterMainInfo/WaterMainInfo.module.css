@@ -1,0 +1,86 @@
+.container {
+    padding-bottom: 32px;
+    background-color: var(--third-color);
+    background-image: url('../../images/water-main-info-section/bottle-mobile.png');
+    background-size: 262px 335px;
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+}
+
+.logo {
+    margin-bottom: 78px;
+}
+
+.dailyNorma {
+    margin-bottom: 49px;
+}
+
+.progressBar {
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addWaterBtn {
+    margin-left: auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-mobile@2x.png');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 32px 32px 64px;
+        background-image: url('../../images/water-main-info-section/bottle-tablet.png');
+        background-size: 374px 477px;
+        background-position: 50% 69px;
+    }
+
+    .logo {
+        margin-bottom: 101px;
+    }
+
+    .dailyNorma {
+        margin-bottom: 87px;
+    }
+
+    .progressBar {
+        margin-bottom: 26px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-tablet@2x.png');
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section {
+        flex-basis: 672px;
+    }
+
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-desktop.png');
+        background-size: 472px 604px;
+        background-position: 50% 92px;
+    }
+
+    .dailyNorma {
+        margin-bottom: 215px;
+        margin-left: 32px;
+    }
+
+    .progressBar {
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-desktop@2x.png');
+    }
+}

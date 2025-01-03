@@ -1,0 +1,124 @@
+/* #region Common styles */
+
+.wrapperBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBtn {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+/* #endregion Common styles */
+
+/* #region WaterMainInfo styles */
+
+.wrapperBtnWaterMainInfo {
+    border-radius: 30px;
+    padding: 14px 20px;
+    min-width: 140px;
+
+    stroke: var(--fifth-color);
+    background-color: var(--main-color);
+
+    transition: stroke 250ms linear;
+}
+
+.wrapperBtnWaterMainInfo:hover,
+.wrapperBtnWaterMainInfo:focus {
+    stroke: var(--fourth-color);
+}
+
+.iconWaterMainInfo {
+    width: 16px;
+    height: 16px;
+}
+
+.iconWaterMainInfo .plusIcon {
+    transform: scale(1.29);
+    transform-origin: center;
+}
+
+.textBtnWaterMainInfo {
+    line-height: 1.29;
+    color: var(--fifth-color);
+
+    transition: color 250ms linear;
+}
+
+.wrapperBtnWaterMainInfo:hover .textBtnWaterMainInfo,
+.wrapperBtnWaterMainInfo:focus .textBtnWaterMainInfo {
+    color: var(--fourth-color);
+}
+
+@media screen and (min-width: 768px) {
+
+    .wrapperBtnWaterMainInfo {
+        padding: 18px 30px;
+        min-width: 178px;
+    }
+
+    .iconWaterMainInfo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .iconWaterMainInfo .plusIcon {
+        transform: scale(1.14);
+    }
+
+    .textBtnWaterMainInfo {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* #endregion WaterMainInfo styles */
+
+/* #region DailyInfo styles */
+
+.wrapperBtnDailyInfo {
+    padding: 0;
+    min-width: 124px;
+    background-color: transparent;
+}
+
+.iconDailyInfo {
+    width: 30px;
+    height: 30px;
+    stroke: var(--main-color);
+
+    border-radius: 30px;
+    background-color: var(--third-color);
+
+    transition: stroke 250ms linear, background-color 250ms linear;
+}
+
+.wrapperBtnDailyInfo:hover .iconDailyInfo,
+.wrapperBtnDailyInfo:focus .iconDailyInfo {
+    stroke: var(--fifth-color);
+    background-color: var(--main-color);
+}
+
+.iconDailyInfo .plusIcon {
+    transform: scale(0.8);
+    transform-origin: center;
+}
+
+.textBtnDailyInfo {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-color);
+}
+
+/* #endregion DailyInfo styles */
