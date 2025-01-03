@@ -1,0 +1,32 @@
+.container {
+    padding-bottom: 32px;
+    background-color: var(--third-color);
+    background-image: url('../../images/water-main-info-section/bottle-mobile.png');
+    background-size: 262px 335px;
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+}
+
+.logo {
+    margin-bottom: 78px;
+}
+
+.dailyNorma {
+    margin-bottom: 49px;
+}
+
+.progressBar {
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addWaterBtn {
+    margin-left: auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-mobile@2x.png');
+    }
+}

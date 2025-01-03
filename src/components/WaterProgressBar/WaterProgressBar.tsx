@@ -1,6 +1,11 @@
+import clsx from "clsx";
 import css from "./WaterProgressBar.module.css";
 
-const WaterProgressBar = () => {
+type WaterProgressBarProps = {
+  className?: string;
+};
+
+const WaterProgressBar = ({ className }: WaterProgressBarProps) => {
   const progressBar = 50;
   const buildStylesProgressBar = () => {
     if (progressBar <= 5) {
@@ -23,7 +28,7 @@ const WaterProgressBar = () => {
   };
 
   return (
-    <div className={css.wrapper}>
+    <div className={clsx(css.wrapper, className)}>
       <p className={css.text}>Today</p>
       <span className={css.wrapperProgressBar}>
         <span
