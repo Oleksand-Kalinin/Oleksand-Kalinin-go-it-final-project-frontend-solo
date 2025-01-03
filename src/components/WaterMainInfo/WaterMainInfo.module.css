@@ -57,3 +57,30 @@
         background-image: url('../../images/water-main-info-section/bottle-tablet@2x.png');
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .section {
+        flex-basis: 672px;
+    }
+
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-desktop.png');
+        background-size: 472px 604px;
+        background-position: 50% 92px;
+    }
+
+    .dailyNorma {
+        margin-bottom: 215px;
+        margin-left: 32px;
+    }
+
+    .progressBar {
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+    .container {
+        background-image: url('../../images/water-main-info-section/bottle-desktop@2x.png');
+    }
+}

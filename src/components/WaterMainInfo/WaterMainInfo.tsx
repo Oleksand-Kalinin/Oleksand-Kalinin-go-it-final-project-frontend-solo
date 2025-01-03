@@ -8,7 +8,7 @@ import css from "./WaterMainInfo.module.css";
 
 const WaterMainInfo = () => {
   return (
-    <Section>
+    <Section className={css.section}>
       <Container className={css.container}>
         <Logo className={css.logo} />
         <WaterDailyNorma className={css.dailyNorma} />
