@@ -2,7 +2,7 @@ import css from "./WaterProgressBar.module.css";
 
 const WaterProgressBar = () => {
   const progressBar = 50;
-  const buildWidth = () => {
+  const buildStylesProgressBar = () => {
     if (progressBar <= 5) {
       return { width: "5%" };
     } else if (progressBar > 100) {
@@ -12,7 +12,7 @@ const WaterProgressBar = () => {
     }
   };
 
-  const buildLeft = () => {
+  const buildStylesPercent = () => {
     if (progressBar <= 5) {
       return { left: "0" };
     } else if (progressBar > 100) {
@@ -26,8 +26,11 @@ const WaterProgressBar = () => {
     <div className={css.wrapper}>
       <p className={css.text}>Today</p>
       <span className={css.wrapperProgressBar}>
-        <span style={buildWidth()} className={css.progressBar}></span>
-        <span style={buildLeft()} className={css.percent}>
+        <span
+          style={buildStylesProgressBar()}
+          className={css.progressBar}
+        ></span>
+        <span style={buildStylesPercent()} className={css.percent}>
           {progressBar}%
         </span>
       </span>

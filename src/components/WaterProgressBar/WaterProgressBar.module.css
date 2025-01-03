@@ -59,3 +59,35 @@
     line-height: 1;
     color: rgba(47, 47, 47, 0.6);
 }
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding: 20px;
+        max-width: 295px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 1.49;
+    }
+
+    .wrapperProgressBar,
+    .progressBar {
+        height: 8px;
+    }
+
+    .progressBar::after {
+        top: -2px;
+    }
+
+    .percent {
+        top: 8px;
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .list {
+        font-size: 12px;
+        line-height: 1.87;
+    }
+}
