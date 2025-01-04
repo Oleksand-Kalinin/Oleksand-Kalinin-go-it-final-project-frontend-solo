@@ -4,7 +4,7 @@ import css from "./UserPanel.module.css";
 import UserBarPopover from "../UserBarPopover/UserBarPopover.tsx";
 
 const UserPanel = () => {
-  const [showUserBarPopover] = useState(false);
+  const [showUserBarPopover] = useState(true);
   return (
     <div className={css.wrapperUserPanel}>
       <p className={css.titleUserPanel}>
