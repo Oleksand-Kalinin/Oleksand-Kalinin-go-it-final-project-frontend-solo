@@ -6,9 +6,9 @@ type WaterProgressBarProps = {
 };
 
 const WaterProgressBar = ({ className }: WaterProgressBarProps) => {
-  const progressBar = 50;
+  const progressBar = 15;
   const buildStylesProgressBar = () => {
-    if (progressBar <= 5) {
+    if (progressBar < 5) {
       return { width: "5%" };
     } else if (progressBar > 100) {
       return { width: "100%" };
@@ -18,7 +18,7 @@ const WaterProgressBar = ({ className }: WaterProgressBarProps) => {
   };
 
   const buildStylesPercent = () => {
-    if (progressBar <= 5) {
+    if (progressBar < 5) {
       return { left: "0" };
     } else if (progressBar > 100) {
       return { left: "calc(100% - 10px)" };
