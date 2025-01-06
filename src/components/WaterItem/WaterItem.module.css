@@ -1,0 +1,69 @@
+.item {
+    flex-shrink: 0;
+    padding: 18px 14px;
+    display: flex;
+    column-gap: 10px;
+
+    border-radius: 15px;
+    backdrop-filter: blur(33.6px);
+    background-color: var(--fifth-color);
+}
+
+.iconWater {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    fill: none;
+    stroke: #9be1a0;
+}
+
+.info {
+    flex-basis: 49px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 6px;
+}
+
+.amountWater {
+    font-weight: 700;
+    line-height: 1;
+    color: var(--main-color);
+}
+
+.time {
+    font-size: 12px;
+    line-height: 1;
+    color: rgba(47, 47, 47, 0.6);
+}
+
+.wrapperButtons {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btn {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.btnIcon {
+    width: 100%;
+    height: 100%;
+    stroke: var(--main-color);
+    fill: none;
+}
