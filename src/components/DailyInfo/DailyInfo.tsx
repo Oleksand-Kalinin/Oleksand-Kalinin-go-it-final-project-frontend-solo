@@ -1,5 +1,6 @@
 import AddWaterBtn from "../AddWaterBtn/AddWaterBtn.tsx";
 import ChooseDate from "../ChooseDate/ChooseDate.tsx";
+import WaterList from "../WaterList/WaterList.tsx";
 import css from "./DailyInfo.module.css";
 
 const DailyInfo = () => {
@@ -10,7 +11,7 @@ const DailyInfo = () => {
         <AddWaterBtn sectionName="DailyInfo" />
       </div>
 
-      <div>WaterList</div>
+      <WaterList />
     </div>
   );
 };
