@@ -67,3 +67,38 @@
     stroke: var(--main-color);
     fill: none;
 }
+
+@media screen and (min-width: 768px) {
+    .item {
+        padding: 20px;
+        column-gap: 20px;
+    }
+
+    .iconWater {
+        width: 44px;
+        height: 45px;
+    }
+
+    .info {
+        flex-basis: 52px;
+        row-gap: 0;
+    }
+
+    .amountWater {
+        font-size: 15px;
+        line-height: 1.49;
+    }
+
+    .time {
+        line-height: 1.87;
+    }
+
+    .wrapperButtons {
+        row-gap: 14px;
+    }
+
+    .btn {
+        width: 16px;
+        height: 16px;
+    }
+}

@@ -11,4 +11,8 @@
     .wrapper {
         min-height: 118px;
     }
+
+    .list {
+        column-gap: 32px;
+    }
 }
