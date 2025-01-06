@@ -1,5 +1,5 @@
 {
-  "name": "go-it-final-project-frontend-solo",
+  "name": "aquatrack-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "author": "Oleksandr Kalinin <work.kalinin.o.v@gmail.com>",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "clsx": "^2.1.1",
