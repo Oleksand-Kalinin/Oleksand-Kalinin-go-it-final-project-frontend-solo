@@ -1,10 +1,8 @@
-import WaterItem from "../WaterItem/WaterItem.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
-import css from "./WaterList.module.css";
-import "swiper/css";
-// import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import { Pagination, Scrollbar } from "swiper/modules";
+import WaterItem from "../WaterItem/WaterItem.tsx";
+import css from "./WaterList.module.css";
+import "/node_modules/swiper/swiper-bundle.min.css";
 
 const WaterList = () => {
   return (
