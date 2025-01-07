@@ -1,0 +1,43 @@
+.currentMonth {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.btnToggleMonth {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconToggleMonth {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.28);
+    stroke: var(--main-color);
+    fill: none;
+}
+
+.month {
+    font-weight: 700;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+    .currentMonth {
+        column-gap: 20px;
+    }
+
+    .month {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

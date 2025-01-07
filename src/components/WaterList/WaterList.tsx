@@ -13,7 +13,7 @@ const WaterList = () => {
         modules={[Scrollbar, Pagination]}
         slidesPerView={2}
         scrollbar={{ draggable: true }}
-        style={{ paddingBottom: "24px", zIndex: 0 }}
+        style={{ paddingBottom: "32px", zIndex: 0 }}
         spaceBetween={8}
         breakpoints={{
           768: {
