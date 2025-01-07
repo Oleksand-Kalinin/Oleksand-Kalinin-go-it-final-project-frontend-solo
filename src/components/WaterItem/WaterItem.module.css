@@ -1,14 +1,3 @@
-.item {
-    flex-shrink: 0;
-    padding: 18px 14px;
-    display: flex;
-    column-gap: 10px;
-
-    border-radius: 15px;
-    backdrop-filter: blur(33.6px);
-    background-color: var(--fifth-color);
-}
-
 .iconWater {
     flex-shrink: 0;
     display: flex;
@@ -21,7 +10,7 @@
 }
 
 .info {
-    flex-basis: 49px;
+    /* flex-basis: 49px; */
     flex-shrink: 0;
 
     display: flex;
@@ -66,4 +55,35 @@
     height: 100%;
     stroke: var(--main-color);
     fill: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .iconWater {
+        width: 44px;
+        height: 45px;
+    }
+
+    .info {
+        flex-basis: 52px;
+        row-gap: 0;
+    }
+
+    .amountWater {
+        font-size: 15px;
+        line-height: 1.49;
+    }
+
+    .time {
+        line-height: 1.87;
+    }
+
+    .wrapperButtons {
+        row-gap: 14px;
+    }
+
+    .btn {
+        width: 16px;
+        height: 16px;
+    }
 }

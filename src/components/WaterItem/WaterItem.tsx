@@ -3,7 +3,7 @@ import css from "./WaterItem.module.css";
 
 const WaterItem = () => {
   return (
-    <li className={css.item}>
+    <>
       <svg className={css.iconWater}>
         <use href={`${sprite}#mage_water-glass-fill-icon`}></use>
       </svg>
@@ -23,7 +23,7 @@ const WaterItem = () => {
           </svg>
         </button>
       </div>
-    </li>
+    </>
   );
 };
 
