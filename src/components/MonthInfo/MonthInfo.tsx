@@ -1,3 +1,4 @@
+import Calendar from "../Calendar/Calendar.tsx";
 import CalendarPagination from "../CalendarPagination/CalendarPagination.tsx";
 import css from "./MonthInfo.module.css";
 
@@ -9,6 +10,7 @@ const MonthInfo = () => {
         <CalendarPagination />
         {/* <button type="button">Diagram</button> */}
       </div>
+      <Calendar />
     </div>
   );
 };
